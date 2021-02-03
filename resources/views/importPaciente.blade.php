@@ -60,5 +60,14 @@
   </div>
 
 
+  <div class="card mb-3">
+    <div class="card-body">
+      <h5 class="card-title">Modelo para importar EXCEL</h5>
+      <p class="card-text">Modelo para importar</a>A extensão do Arquivo XLSX, não colocar a linha 1 da foto. </p>
+    </div>
+  </div>
+
+
+
 
 @endsection
