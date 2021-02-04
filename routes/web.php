@@ -29,29 +29,13 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('pacientes', PacienteController::class);
     Route::resource('hospital', HospitalController::class);
    
-
-    
-    
-    
-    
-    
     Route::get('import_exportpacie', 'App\Http\Controllers\Import_Export_ControllerPacie@importExport');
     Route::post('importpacie', 'App\Http\Controllers\Import_Export_ControllerPacie@import');
     Route::get('exportpacie', 'App\Http\Controllers\Import_Export_ControllerPacie@export');
 
-
-
-    
-    
-    
-    
     Route::get('import_export', 'App\Http\Controllers\Import_Export_Controller@importExport');
     Route::post('import', 'App\Http\Controllers\Import_Export_Controller@import');
     Route::get('export', 'App\Http\Controllers\Import_Export_Controller@export');
-
-
-    
-    
     
 });
 
