@@ -69,13 +69,7 @@ class PacienteController extends Controller
             'datasolicitacao' =>'required',
             'unidadedesejada' => 'required',
             'codigo' => 'required',
-            'observacao1' => 'required',
-            'observacao2' => 'required',
-            'observacao3' => 'required',
-            'observacao4' => 'required',
-            'observacao5' => 'required',
-            'statusSolicitacao' => 'required'
-            ]);
+          ]);
 
         Pacientes::create($request->all());
         return redirect()->route('pacientes.index')
@@ -123,16 +117,9 @@ class PacienteController extends Controller
             'datasolicitacao' =>'required',
             'unidadedesejada' => 'required',
             'codigo' => 'required',
-            'observacao1' => 'required',
-            'observacao2' => 'required',
-            'observacao3' => 'required',
-            'observacao4' => 'required',
-            'observacao5' => 'required',
-            'statusSolicitacao' => 'required'
            ]);
 
-
-
+           
         $paciente->update($request->all());
 
         return redirect()->route('pacientes.index')

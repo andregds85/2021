@@ -23,14 +23,14 @@ class CreatePacientesTable extends Migration
             $table->string('datasolicitacao');
             $table->string('unidadedesejada');
             $table->string('codigo');
-            $table->text('observacao1');
-            $table->text('observacao2');
-            $table->text('observacao3');
-            $table->text('observacao4');
-            $table->text('observacao5');
-            $table->string('statusSolicitacao');
+            $table->text('observacao1')->nullable();
+            $table->text('observacao2')->nullable();
+            $table->text('observacao3')->nullable();
+            $table->text('observacao4')->nullable();
+            $table->text('observacao5')->nullable();
+            $table->string('statusSolicitacao')->nullable();
             $table->timestamps();
-        });
+        });      
 
         Schema::table('pacientes', function (Blueprint $table) {
             $table->foreign('categorias_id')->references('id')->on('categorias');
