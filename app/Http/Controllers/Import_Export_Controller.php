@@ -12,10 +12,10 @@ class Import_Export_Controller extends Controller
 {
     function __construct()
     {
-         $this->middleware('permission:pacientes-list|pacientes-create|pacientes-edit|pacientes-delete', ['only' => ['index','show','__invoke']]);
-         $this->middleware('permission:pacientes-create', ['only' => ['create','store']]);
-         $this->middleware('permission:pacientes-edit', ['only' => ['edit','update']]);
-         $this->middleware('permission:pacientes-delete', ['only' => ['destroy']]);
+         $this->middleware('permission:role-list|role-create|role-edit|role-delete', ['only' => ['index','store']]);
+         $this->middleware('permission:role-create', ['only' => ['create','store']]);
+         $this->middleware('permission:role-edit', ['only' => ['edit','update']]);
+         $this->middleware('permission:role-delete', ['only' => ['destroy']]);
     }
 
 

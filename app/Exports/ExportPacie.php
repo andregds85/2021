@@ -9,6 +9,7 @@ use Maatwebsite\Excel\Concerns\FromCollection;
 
 class ExportPacie implements FromCollection
 {
+
     /**
     * @return \Illuminate\Support\Collection
     */

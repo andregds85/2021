@@ -9,6 +9,8 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CategoriaController;
 use App\Http\Controllers\PacienteController;
 use App\Http\Controllers\HospitalController;
+use App\Http\Controllers\soudohospital;
+
 
 
 Route::get('/', function () {
@@ -28,6 +30,8 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('categorias', CategoriaController::class);
     Route::resource('pacientes', PacienteController::class);
     Route::resource('hospital', HospitalController::class);
+    Route::resource('soudohospital', soudohospital::class);
+
    
     Route::get('import_exportpacie', 'App\Http\Controllers\Import_Export_ControllerPacie@importExport');
     Route::post('importpacie', 'App\Http\Controllers\Import_Export_ControllerPacie@import');

@@ -17,37 +17,39 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Request $request)
+  
+    function __construct()
+    {
+         $this->middleware('permission:role-list|role-create|role-edit|role-delete', ['only' => ['index','store']]);
+         $this->middleware('permission:role-create', ['only' => ['create','store']]);
+         $this->middleware('permission:role-edit', ['only' => ['edit','update']]);
+         $this->middleware('permission:role-delete', ['only' => ['destroy']]);
+    }
+   
+    
+     public function index(Request $request)
     {
         $data = User::orderBy('id','DESC')->paginate(5);
         return view('users.index',compact('data'))
             ->with('i', ($request->input('page', 1) - 1) * 5);
     }
     
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function create()
     {
         $roles = Role::pluck('name','name')->all();
         return view('users.create',compact('roles'));
     }
     
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+
     public function store(Request $request)
     {
         $this->validate($request, [
             'name' => 'required',
             'email' => 'required|email|unique:users,email',
             'password' => 'required|same:confirm-password',
-            'roles' => 'required'
+         /*   'roles' => 'required' */
+             
         ]);
     
         $input = $request->all();
@@ -100,7 +102,7 @@ class UserController extends Controller
             'name' => 'required',
             'email' => 'required|email|unique:users,email,'.$id,
             'password' => 'same:confirm-password',
-            'roles' => 'required'
+           /* 'roles' => 'required'*/
         ]);
     
         $input = $request->all();

@@ -10,9 +10,9 @@
         <div class="pull-right">
             <a class="btn btn-success" href="{{ route('users.create') }}"> Criar Novo Usuário</a>
         </div>
-    </div>
-    
-</div>
+   </div>
+ </div>
+
 
 
 @if ($message = Session::get('success'))
@@ -20,6 +20,8 @@
   <p>{{ $message }}</p>
 </div>
 @endif
+
+
 
 
 <table class="table table-bordered">

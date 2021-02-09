@@ -59,10 +59,33 @@
             {!! Form::select('roles[]', $roles,[], array('class' => 'form-control','multiple')) !!}
         </div>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+ 
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="form-group">
+                <label for="exampleInputCategoria">Hospital</label>
+                <select class="form-control" name="categorias_id" id="categoria">
+
+                <?php
+                    use App\Models\Categoria;
+                    $tabela = categoria::all();
+                ?>
+
+                @foreach($tabela as $item)
+                <option value='{{$item->id}}' >{{$item->id}}{{$item->name}}</option>
+                @endforeach
+                </select>
+            </div>
+        </div>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-12 text-center">
         <button type="submit" class="btn btn-primary">Cadastrar</button>
     </div>
-</div>
+
+
 {!! Form::close() !!}
 
 
