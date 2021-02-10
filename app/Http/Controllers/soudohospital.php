@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\Paciente;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 
@@ -15,7 +16,9 @@ class soudohospital extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
+    {   
+         
+
      return view('soudohospital.index');
     }
 
@@ -23,7 +26,6 @@ class soudohospital extends Controller
     {
 
     }
-
     public function store(Request $request)
     {
 
@@ -33,7 +35,6 @@ class soudohospital extends Controller
     {
         
     }
-
     public function edit($id)
     {
         
