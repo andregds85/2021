@@ -13,10 +13,10 @@ class Import_Export_ControllerPacie extends Controller
 
     function __construct()
     {
-         $this->middleware('permission:pacientes-list|pacientes-create|pacientes-edit|pacientes-delete', ['only' => ['index','show','__invoke']]);
-         $this->middleware('permission:pacientes-create', ['only' => ['create','store']]);
-         $this->middleware('permission:pacientes-edit', ['only' => ['edit','update']]);
-         $this->middleware('permission:pacientes-delete', ['only' => ['destroy']]);
+         $this->middleware('permission:arquivo-list|arquivo-create|pacientes-edit|arquivo-delete', ['only' => ['index','show']]);
+         $this->middleware('permission:arquivo-create', ['only' => ['create','store']]);
+         $this->middleware('permission:arquivo-edit', ['only' => ['edit','update']]);
+         $this->middleware('permission:arquivo-delete', ['only' => ['destroy']]);
     }
 
 

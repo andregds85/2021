@@ -10,22 +10,29 @@ use Illuminate\Http\Request;
 
 class soudohospital extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {   
-         
-
-     return view('soudohospital.index');
+   
+    function __construct()
+    {
+         $this->middleware('permission:unidadHosp-list|unidadHosp-create|unidadHosp-edit|unidadHosp-delete', ['only' => ['index','show']]);
+         $this->middleware('permission:unidadHosp-create', ['only' => ['create','store']]);
+         $this->middleware('permission:unidadHosp-edit', ['only' => ['edit','update']]);
+         $this->middleware('permission:unidadHosp-delete', ['only' => ['destroy']]);
     }
 
+    public function index(Request $request)
+   
+    {   
+    
+     return view('soudohospital.index');
+    
+    }
+
+    
     public function create()
     {
 
     }
+
     public function store(Request $request)
     {
 

@@ -30,7 +30,11 @@ class PermissionTableSeeder extends Seeder
            'arquivo-list',
            'arquivo-create',
            'arquivo-edit',
-           'arquivo-delete'
+           'arquivo-delete',
+           'unidadHosp-list',
+           'unidadHosp-create',
+           'unidadHosp-edit',
+           'unidadHosp-delete'
         ];
 
         
