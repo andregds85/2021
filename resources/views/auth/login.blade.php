@@ -50,8 +50,7 @@
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Entrar') }}
                                 </button>
-
-             
+          
                             </div>
                         </div>
                     </form>

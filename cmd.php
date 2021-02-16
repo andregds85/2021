@@ -22,10 +22,8 @@ Criar um Controller
 php artisan make:controller PostController --resource
 
 
-
 Criando um modulo
 https://www.diegobrocanelli.com.br/php/laravel-module/
-
 
 
 Criando a autenticação toda.
@@ -36,6 +34,15 @@ Exportar CSV e EXCEL
 <li><a class="nav-link" href="{{ url('https://websolutionstuff.com/post/laravel-8-import-export-csv-excel-file-example
 ') }}">Exportar CSV</a></li>
 
+
+
+Mapas dos Layouts
+
+Layouts         Principal
+
+Layouts2        Sou do Hospital
+
+Layouts 3       Regulação 
 
 
 

@@ -7,6 +7,16 @@ use Illuminate\Http\Request;
 class MapasController extends Controller
 {
   
+    function __construct()
+    {
+         $this->middleware('permission:unidadHosp-list|unidadHosp-create|unidadHosp-edit|unidadHosp-delete', ['only' => ['index','show']]);
+         $this->middleware('permission:unidadHosp-create', ['only' => ['create','store']]);
+         $this->middleware('permission:unidadHosp-edit', ['only' => ['edit','update']]);
+         $this->middleware('permission:unidadHosp-delete', ['only' => ['destroy']]);
+    }
+
+
+
     public function index()
     {
          $mapas = mapas::orderby('id', 'asc')->paginate();
