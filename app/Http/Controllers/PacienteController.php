@@ -21,7 +21,7 @@ class PacienteController extends Controller
     {
          $pacientes = Pacientes::orderby('id', 'asc')->paginate();
          return view('pacientes.index',compact('pacientes'));
-     
+    
     }
 
     public function create()
@@ -29,7 +29,6 @@ class PacienteController extends Controller
         return view('pacientes.create');
 
     }
-
 
     public function hospital()
     {
@@ -92,7 +91,6 @@ class PacienteController extends Controller
     public function destroy(Pacientes $paciente)
     {
         $paciente->delete();
-
         return redirect()->route('pacientes.index')
                         ->with('Sucesso','Paciente Deletado com Sucesso');
     }

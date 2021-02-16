@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class mapas extends Model
 {
+
     use HasFactory;
     protected $table="mapas";
     protected $fillable = [
@@ -18,5 +19,6 @@ class mapas extends Model
         'procedimento',
         'vagas'
       ];
-}
 
+
+}

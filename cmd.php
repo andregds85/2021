@@ -32,6 +32,15 @@ Criando a autenticação toda.
 https://medium.com/@tm.talhamaqsood18/simple-authentication-in-laravel-8-9-0-step-by-step-with-images-a63149679f2b
 
 
+Exportar CSV e EXCEL 
+<li><a class="nav-link" href="{{ url('https://websolutionstuff.com/post/laravel-8-import-export-csv-excel-file-example
+') }}">Exportar CSV</a></li>
+
+
+
+
+
+
 
 
 

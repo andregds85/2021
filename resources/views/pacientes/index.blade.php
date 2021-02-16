@@ -1,6 +1,37 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="card mb-3">
+  <div class="card-body">
+    <h5 class="card-title">Importar Paciente</h5>
+
+    <p class="card-text">
+    <a class="nav-link" href="{{ url('import_exportpacie') }}">Importar Pacientes</a>
+
+    </p>
+  </div>
+</div>
+
+<div class="card mb-3">
+  <div class="card-body">
+    <h5 class="card-title">Exportar Paciente</h5>
+
+    <p class="card-text">
+    <a class="nav-link" href="{{ url('exportpacie') }}"> Exportar Pacientes EXCEL</a>
+
+    </p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
