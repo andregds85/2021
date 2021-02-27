@@ -7,6 +7,9 @@
                 <h2>Mapas</h2>
             </div>
             <div class="pull-right">
+                @can('categoria-create')
+                <a class="btn btn-success" href="{{ route('mapas.create') }}"> Novo Mapa</a>
+                @endcan
             </div>
         </div>
     </div>
@@ -29,7 +32,7 @@
 	        <td>{{ ++$i }}</td>
 	        <td>{{ $mapa->id }}</td>
 	        <td>{{ $mapa->nome }}</td>
-	    
+
 	    </tr>
 	    @endforeach
     </table>

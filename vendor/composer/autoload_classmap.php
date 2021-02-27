@@ -22,6 +22,7 @@ return array(
     'App\\Http\\Controllers\\HospitalController' => $baseDir . '/app/Http/Controllers/HospitalController.php',
     'App\\Http\\Controllers\\Import_Export_Controller' => $baseDir . '/app/Http/Controllers/Import_Export_Controller.php',
     'App\\Http\\Controllers\\Import_Export_ControllerPacie' => $baseDir . '/app/Http/Controllers/Import_Export_ControllerPacie.php',
+    'App\\Http\\Controllers\\MapasController' => $baseDir . '/app/Http/Controllers/MapasController.php',
     'App\\Http\\Controllers\\PacienteController' => $baseDir . '/app/Http/Controllers/PacienteController.php',
     'App\\Http\\Controllers\\RoleController' => $baseDir . '/app/Http/Controllers/RoleController.php',
     'App\\Http\\Controllers\\UserController' => $baseDir . '/app/Http/Controllers/UserController.php',
