@@ -36,6 +36,8 @@ Exportar CSV e EXCEL
 
 
 
+
+
 Mapas dos Layouts
 
 Layouts         Principal
@@ -43,6 +45,56 @@ Layouts         Principal
 Layouts2        Sou do Hospital
 
 Layouts 3       Regulação 
+
+Layouts 4       Administrador 
+
+
+
+
+
+
+php artisan make:model administrador -m       --
+
+
+
+php artisan make:controller admController --resource
+
+
+
+
+
+Permission 
+
+           'role-list',
+           'role-create',
+           'role-edit',
+           'role-delete',
+           'categoria-list',
+           'categoria-create',
+           'categoria-edit',
+           'categoria-delete',
+           'pacientes-list',
+           'pacientes-create',
+           'pacientes-edit',
+           'pacientes-delete',
+           'arquivo-list',
+           'arquivo-create',
+           'arquivo-edit',
+           'arquivo-delete',
+           'unidadHosp-list',
+           'unidadHosp-create',
+           'unidadHosp-edit',
+           'unidadHosp-delete',
+           'admin-list',
+           'admin-create',
+           'admin-edit',
+           'admin-delete'
+
+
+
+
+
+
 
 
 

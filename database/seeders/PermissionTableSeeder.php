@@ -34,7 +34,11 @@ class PermissionTableSeeder extends Seeder
            'unidadHosp-list',
            'unidadHosp-create',
            'unidadHosp-edit',
-           'unidadHosp-delete'
+           'unidadHosp-delete',
+           'admin-list',
+           'admin-create',
+           'admin-edit',
+           'admin-delete'
         ];
 
         

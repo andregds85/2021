@@ -24,11 +24,9 @@ class RoleController extends Controller
          $this->middleware('permission:role-delete', ['only' => ['destroy']]);
     }
     
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
+    
+
     public function index(Request $request)
     {
         $roles = Role::orderBy('id','DESC')->paginate(5);
