@@ -1,6 +1,4 @@
-@extends('layouts.app')
-
-
+@extends('layouts4.app')
 @section('content')
 <div class="card mb-3">
   <div class="card-body">

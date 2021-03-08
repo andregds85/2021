@@ -39,7 +39,7 @@ class PermissionTableSeeder extends Seeder
            'admin-create',
            'admin-edit',
            'admin-delete'
-        ];
+          ];
 
         
 
