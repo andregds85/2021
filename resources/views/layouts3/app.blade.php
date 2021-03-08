@@ -71,7 +71,7 @@
     <!-- Main Footer -->
     <footer class="main-footer">
        
-        <strong>Frase de Rodapé  &copy; <?php echo '20'. $hoje=date('y'); ?> 
+    <strong>Secretaria de Estado da Saúde  &copy; <?php echo '20'. $hoje=date('y'); ?> 
     </footer>
 </div>
 
